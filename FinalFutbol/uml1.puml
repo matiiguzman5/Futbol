@@ -1,0 +1,44 @@
+@startuml
+class EtapaMundial {
+- String descripcionEtapa
+- ArrayList<Partido> partidos
++ String getDescripcionEtapa()
++ void setDescripcionEtapa(String)
++ ArrayList<Partido> getPartidos()
++ void setPartidos(ArrayList<Partido>)
++ void addPartidos()
+}
+class Equipo {
+- String nombre
+- ArrayList<Partido> partidosJugados
++ String getNombre()
++ void setNombre(String)
+}
+class Partido {
+- Date fecha
+- String local
+- String visitante
+- int resultado
++ Date getFecha()
++ void setFecha(Date)
++ String getLocal()
++ void setLocal(String)
++ String getVisitante()
++ void setVisitante(String)
++ int getResultado()
++ void setResultado(int)
+}
+class Main {
++ {static} void main(String[])
+}
+class Resultado {
+- int golesLocal
+- int golesVisitante
++ int getGolesLocal()
++ void setGolesLocal(int)
++ int getGolesVisitante()
++ void setGolesVisitante(int)
++ boolean ganoLocal()
++ boolean empate()
+}
+@enduml

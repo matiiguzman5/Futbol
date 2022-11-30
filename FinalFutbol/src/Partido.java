@@ -6,6 +6,9 @@ public class Partido {
     private String visitante;
     private int resultado;
 
+    public Partido(Date fecha, Equipo argentina, Equipo polonia) {
+    }
+
     public Date getFecha() {
         return fecha;
     }

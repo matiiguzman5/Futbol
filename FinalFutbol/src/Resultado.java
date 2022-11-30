@@ -17,4 +17,10 @@ public class Resultado {
     public void setGolesVisitante(int golesVisitante) {
         this.golesVisitante = golesVisitante;
     }
+    public boolean ganoLocal() {
+        return true;
+    }
+    public boolean empate(){
+        return true;
+    }
 }
