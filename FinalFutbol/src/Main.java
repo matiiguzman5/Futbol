@@ -17,8 +17,7 @@ public class Main {
     Equipo venezuela = new Equipo("venezuela");
     Equipo inglaterra = new Equipo("inglaterra");
 
-    Partido partido1 = new Partido(new Date(2022,10,10), argentina, polonia);
-    getResultado
+
 
 
 }

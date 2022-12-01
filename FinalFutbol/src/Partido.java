@@ -2,47 +2,26 @@ import java.util.Date;
 
 public class Partido {
     private Date fecha;
-    private String local;
-    private String visitante;
-    private int resultado;
+    private Equipo local;
+    private Equipo visitante;
+    private Resultado resultado;
 
-    public Partido(Date fecha, Equipo argentina, Equipo polonia) {
-    }
 
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-
-    public String getLocal() {
-        return local;
-    }
-
-    public void setLocal(String local) {
-        this.local = local;
-    }
-
-    public String getVisitante() {
-        return visitante;
-    }
-
-    public void setVisitante(String visitante) {
-        this.visitante = visitante;
-    }
-
-    public int getResultado() {
+    public Resultado getResultado() {
         return resultado;
     }
 
-    public void setResultado(int resultado) {
-        this.resultado = resultado;
+    public Equipo getLocal() {
+        return local;
     }
-    Partido(Date fecha, String local, String visitante){
-        setFecha(fecha);
-        setLocal(local);
-        setVisitante(visitante);
+
+    public Equipo getVisitante() {
+        return visitante;
+    }
+    Partido(Date fecha, Equipo local, Equipo visitante, Resultado resultado){
+        this.fecha=fecha;
+        this.local=getLocal();
+        this.visitante=getVisitante();
+        this.resultado=getResultado();
     }
 }
